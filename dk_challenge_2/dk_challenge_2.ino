@@ -61,7 +61,7 @@ void TaskBlink1(void *pvParameters){
     Turns on an LED on for one second, then off for one second, repeatedly.
   */
 
-  // initialize digital LED_BUILTIN on pin 13 as an output.
+  // initialize digital LED_BUILTIN as an output.
   pinMode(LED_BUILTIN, OUTPUT);
 
   for (;;){ // A Task shall never return or exit.
@@ -78,7 +78,7 @@ void TaskBlink2(void *pvParameters){  // This is a task.
     Turns on an LED on for a bit, then off for a bit, repeatedly.
   */
 
-  // initialize digital LED_BUILTIN on pin 13 as an output.
+  // initialize digital LED_BUILTIN as an output.
   pinMode(LED_BUILTIN, OUTPUT);
 
   for (;;){ // A Task shall never return or exit.
