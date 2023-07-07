@@ -1,4 +1,5 @@
 // Maci's submission for Digikey Intro to RTOS Challenge 2
+// Add another task that also blinks the LED concurrently to task 1
 
 #if CONFIG_FREERTOS_UNICORE
 #define ARDUINO_RUNNING_CORE 0
