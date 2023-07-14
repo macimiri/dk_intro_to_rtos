@@ -74,7 +74,7 @@ void task_blink(void *pvParameters){
   Serial.print("Received delay arg: ");
   Serial.println(local_delay_arg);
 
-  // Signal to setup() that var has been accessed
+  // Signal to setup() that var has been accessed by taking mutex
   while(xSemaphoreTake(mutex, 0) == pdFALSE);
 
   pinMode(LED_BUILTIN, OUTPUT);
